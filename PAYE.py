@@ -1,3 +1,10 @@
+"""
+Welcome
+This is a program for calculating tax amounts based on income. It uses the calculation.py from previous activities
+module for its calculations
+
+"""
+
 import calculation
 
 

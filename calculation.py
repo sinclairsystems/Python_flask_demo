@@ -1,3 +1,5 @@
+#Here we have the same calculation program from our previous activities
+
 def add(num1, num2):
     return num1 + num2
 
