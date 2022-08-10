@@ -26,11 +26,11 @@ app = Flask(__name__)
 #everything after that / can lead to different parts of a website/ web service
 @app.route('/')
 def hello_world():
-    return 'WHAT IS GOIN ON GUYS? WHATS GOOD?!. This is a website of sorts...obviously not a very pretty one but it is functional'
+    return 'WHAT IS GOIN ON GUYS? WHATS GOOD?!. lol This is a website of sorts...obviously not a very pretty one but it is functional'
 
-#here we have a different URL route which will take in an input and put it through PAYEs totalTax method and return
-#the result
+
 @app.route('/getNetIncome/', methods=['POST'])
+#this method will be triggered by the above URL end point. take its input and send it to the totalTax() function in PAYE.py
 def netIncome():
     gross_income = request.get_json()
     print(gross_income)
